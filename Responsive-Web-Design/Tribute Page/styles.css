@@ -1,0 +1,115 @@
+body {
+    background:#151515;
+    color: white;
+    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0 0 15px 0;
+  }
+  
+  /*Header BG*/
+  header {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    max-width: 100%;
+    border-bottom: 1px solid #fdb347; 
+  }
+  
+  /*Header*/
+  #logo {
+    display: block;
+    margin: 0 auto;
+    width: 35%;
+    max-width: 400px;
+    border-bottom: 1px solid #fdb347; 
+  }
+  
+  #title {
+    color: #f5f6f7;
+    display: block;
+    text-align: center;
+    margin: 0;
+    padding: 15 0 10 0;
+  }
+  
+  p {
+    color: white;
+    font-size: 15px;
+    display: block;
+    text-align: center;
+    margin: 0;
+    padding: 0px 0px 30px 0px;
+  }
+  
+  /*Image and Caption*/
+  #image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    border-radius: 3px;
+  }
+  
+  figcaption {
+    text-align: center;
+    font-size: 15px;
+    padding: 15 0 10 0px;
+    border-bottom: 1px solid #fdb34780;
+  }
+  
+  /*Info Section*/
+  section {
+    display: block;
+    width: 70%;
+    margin: auto;
+    text-align: left;
+    padding: 20px 60px ;
+    background-color: #fdb34765;
+    border-radius: 5px;
+    max-width: 625px;
+    
+  }
+  
+  #info-headline {
+    display: block;
+    margin: 35px 0;
+    text-align: center;
+  }
+  
+  /*Info List*/
+  ul {
+    display: block;
+    margin: 0 auto 50px auto;
+    max-width: 650px;
+  }
+  
+  li {
+    margin: 16px 0;
+  }
+  
+  /*Link*/
+  #link {
+    font-size: 14px;
+  }
+  
+  a {
+    color: white;
+  }
+  
+  a:hover {
+    color: #e68a00;
+  }
+  
+  /*Font Styling*/
+  .bold {
+    font-weight: bold;
+  }
+  
+  .italic {
+    font-style: italic
+  }
+  
+  .goty {
+    color: #fdb347;
+  }
