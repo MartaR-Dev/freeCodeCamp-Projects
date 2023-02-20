@@ -1,0 +1,68 @@
+h1, p {
+    text-align: center;
+    color: white;
+    margin: 1em auto;
+  }
+  
+  h1 {
+    font-size: 50px;
+  }
+  
+  /*Background Color*/
+  body {
+    background-color: #B58794;
+    font-family: Tahoma;
+    font-size: 16px
+  }
+  
+  /*Form Shape*/
+  form {
+    background-color: #EAC9B8;
+    padding: 1rem 1.5rem;
+    border-radius: 0.35rem;
+    max-width: 600px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+  }
+  
+  /*Labels stacking*/
+  label {
+    display: block;
+    margin: 0.7rem 0;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  
+  /*Input fields styling*/
+  input, textarea, select {
+    border-radius: 0.27rem;
+    border-width: thin;
+    border-color: #B58794;
+  }
+  
+  
+  #name, #email, #number, #dropdown {
+    display: block;
+    margin: 6px 0 10px 0;
+    width: 100%;
+    padding: 8px
+  }
+  
+  textarea {
+    min-height: 120px;
+    width: 100%;
+    padding: 0.625rem;
+  }
+  
+  /*Submit button styling*/
+  #submit {
+    width: 100%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    color: black;
+    background-color: #E2A39C;
+    border-color: #B58794;
+    min-width: 300px;
+  }
