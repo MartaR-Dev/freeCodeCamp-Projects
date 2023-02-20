@@ -1,0 +1,103 @@
+html {
+    display: block;
+  }
+  
+  html, body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: #4d4e53;
+    background-color: #ffffff;
+    line-height: 1.5;
+  }
+  
+  /*Navigation Bar*/
+  nav > header { /*only nav header*/
+    color: black;
+    font-weight: thin;
+    font-size: 1.8em;
+    text-align: center;
+    margin: 16px;
+  }
+  
+  #navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0.85rem;
+  }
+  
+  li a {
+    display: block;
+    color: #4d4e53;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-top: 1px solid;
+  }
+  
+  a:hover {
+    background-color: #555;
+    color: white;
+  }
+  
+  #navbar {
+    height: 100%;
+    width: 270px;
+    min-width: 290px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    border-right: 2px solid;
+    border-color: rgba(0, 20, 20, 0.4);
+  }
+  /*End Navigation Bar*/
+  
+  #main-doc {
+   position: absolute;
+   margin-left: 310px;
+   padding: 15px;
+  }
+  
+  #main-doc header {
+    color: black;
+    font-weight: thin;
+    font-size: 1.8em;
+    text-align: left;
+    padding: 15px 0 15px 10px;
+  }
+  
+  section p, section ul {
+    display: block;
+    margin: 15px;
+    font-size: 0.85rem;
+  }
+  
+  section li {
+    margin: 15px 0px 0px 20px;
+  }
+  
+  p {
+    line-height: 1.35;
+  }
+  
+  code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal; /* Specifies how words should break when reaching the end of a line.*/
+    line-height: 2;
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+  }
+  
+  @media only screen   
+  and (min-device-width : 768px)   
+  and (max-device-width : 1024px) {
+    #navbar {
+      visibility: true;
+      position: fixed;
+    }
+  }
