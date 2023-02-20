@@ -1,0 +1,233 @@
+/*Color Variables*/
+:root {
+    --main-font-color: #f2f2f2;
+    --dark-blue: #3D425F;
+    --med-blue: #4E8D97;
+    --light-blue: #66B3B1;
+  }
+  /*---*/
+  
+  /*General Rules*/
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 1.4;
+    font-size: 15px;
+    color: var(--main-font-color);
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--main-font-color);
+  }
+  /*---*/
+  
+  
+  
+  /*Nav Bar*/
+  
+  nav ul {
+    float: right;
+    font-size: 16px;
+    margin-right: 12px;
+    padding: 0;
+  }
+  
+  nav li {
+    display:inline-block;
+    padding: 14px;
+    text-shadow: 1px 1px 3px #3D425F;
+  }
+  
+  nav a {
+    color: var(--main-font-color);
+  }
+  
+  nav li:hover {
+    background: #3D425F;
+  }
+  
+  nav { /*navigation bar basis*/
+    overflow: hidden;
+    background: #4E8D97;
+    box-shadow: 0 2px 0 #3D425F50;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    z-index: 999;
+  }
+  /*---*/
+  
+  
+  /*Welcome Section*/
+  
+  #welcome-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding-left: 8%;
+    background-color: black;
+    background: linear-gradient(
+      62deg,
+      #303041 0%,
+      #181719 100%
+    )
+  }
+  
+  .profile-pic {
+    position: absolute;
+    z-index: 1;
+    width: 250px;
+    height: auto;
+    margin-right: 450px;
+    margin-bottom: 20px;
+    border-radius: 2% 18%;
+  }
+  
+  .introduction, .subtitle {
+    z-index: 2;
+    text-shadow: 2px 2px 3px black;
+    margin-left: 150px;
+  }
+  
+  .introduction {
+    font-size: 35px;
+    font-weight: bold;
+    padding-bottom: 5px;
+  }
+  
+  .subtitle {
+    font-size: 18px;
+    font-weight: 150;
+    font-style: italic;
+    color: #66B3B1;
+  }
+  
+  /*Projects Section*/
+  #projects {
+    text-align: center;
+    padding: 100px 20px;
+    background: var(--dark-blue);
+  }
+  
+  .projects-header {
+    max-width: 640px;
+    margin: 0 auto 60px auto;
+    border-bottom: 0.2px solid var(--main-font-color);
+    padding-bottom: 10px;
+  }
+  
+  .project-tile { /*Grid*/
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 30px;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  
+  .projects { /*Projects BG Base*/
+    background: #3a3d40;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+  }
+  
+  .project-title {
+    font-size: 17px;
+    padding: 20px 0.5px;
+  }
+  
+  /*Code < /> Animation*/
+  .project-title:hover .code {
+    color: #ff7f50; /*code color when hovered*/
+  }
+  
+  .code {
+    color: #3a3d40; /*same color as bg*/
+    transition: color 0.4s ease-out; /*fade in and out effect*/
+  }
+  /*----*/
+  
+  
+  /*Contact Section*/
+  
+  .contact-section { /*Base*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+    padding: 0 20px;
+    background: #303041;
+  }
+  
+  .title {
+    font-size: 38px;
+    font-weight: bold;
+    padding: 8px;
+  }
+  
+  .contact-link {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 980px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+  }
+  
+  .contact-details {
+    font-size: 16.5px;
+    text-shadow: 2px 2px 1px #1f1f1f;
+    padding-top: 10px;
+    transition: transform 0.4s ease-out;
+  }
+  
+  .contact-details:hover {
+    transform: translateY(8px);
+  }
+  
+  .fa-free-code-camp { /*Icon*/
+    top: 5;
+    position: relative;
+    font-size: 30px;
+    padding: 5px;
+  }
+  
+  /*query for phone*/
+  
+  @media screen and (max-width: 600px) {
+    .profile-pic {
+      display: none;
+    }
+    .introduction, .subtitle {
+    margin: 0 auto;
+    }
+  
+  }
