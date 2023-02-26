@@ -48,14 +48,14 @@
   
   nav ul {
     float: right;
-    font-size: 16px;
+    font-size: 20px;
     margin-right: 12px;
     padding: 0;
   }
   
   nav li {
     display:inline-block;
-    padding: 14px;
+    padding: 22px;
     text-shadow: 1px 1px 3px #3D425F;
   }
   
@@ -82,14 +82,14 @@
   /*Welcome Section*/
   
   #welcome-section {
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     width: 100%;
     height: 100vh;
-    padding-left: 8%;
+    padding: 0 20px;
     background-color: black;
     background: linear-gradient(
       62deg,
@@ -98,30 +98,30 @@
     )
   }
   
-  .profile-pic {
+  /*.profile-pic {
     position: absolute;
     z-index: 1;
-    width: 250px;
+    width: 300px;
     height: auto;
     margin-right: 450px;
     margin-bottom: 20px;
     border-radius: 2% 18%;
-  }
-  
-  .introduction, .subtitle {
-    z-index: 2;
-    text-shadow: 2px 2px 3px black;
-    margin-left: 150px;
-  }
+  }*/
   
   .introduction {
-    font-size: 35px;
+    z-index: 2;
+    font-size: 50px;
+    text-shadow: 2px 2px 3px black;
     font-weight: bold;
-    padding-bottom: 5px;
+    /*padding: 5px;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    padding: 10px;*/
   }
   
   .subtitle {
-    font-size: 18px;
+    font-size: 28px;
     font-weight: 150;
     font-style: italic;
     color: #66B3B1;
